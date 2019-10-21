@@ -1,3 +1,4 @@
+/* eslint-disable strict */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {
   CleanWebpackPlugin
@@ -12,10 +13,10 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js']
   },
   module: {
-    rules: [{
+    rules: [ {
       test: /\.tsx?$/,
-      use: 'ts-loader',
-      exclude: /node_modules/
+      exclude: /node_modules/,
+      loader: 'ts-loader'
     }]
   },
   devtool: process.env.NODE_ENV === 'production' ? false : 'inline-source-map',
@@ -32,4 +33,4 @@ module.exports = {
       template: './src/template/index.html'
     })
   ]
-}
+};

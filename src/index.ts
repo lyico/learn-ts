@@ -1,3 +1,4 @@
-const cc: number = 123;
-
-console.log(cc);
+// import './example/basic-type';
+// import './example/symbol';
+// import "./example/interface";
+import "./example/function";
