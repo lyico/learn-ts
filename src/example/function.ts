@@ -20,4 +20,22 @@ cc = (num1: number, num2: number) => num1 + num2;
 type AddFunction = (x: number, y: number, z?: number) => number;
 
 let testFun: AddFunction;
+//默认值
 testFun = (x: number = 5, y: number) => x + y;
+
+// const handleData = (arg1: number, ...args: number[]) => {
+//   //...
+// };
+
+//函数的重载
+// function handleData(x: string): string[];
+// function handleData(x: number): number[];
+// function handleData(x: any): any {
+//   if (typeof x === "string") return x.split("");
+//   return x
+//     .toString()
+//     .split("")
+//     .map((item: any) => Number(item));
+// }
+
+// console.log(handleData("abc"));
